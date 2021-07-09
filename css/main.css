@@ -1,0 +1,87 @@
+* {
+	padding:0;
+	margin:0;
+}
+body {
+	margin: 0; 
+	padding: 0; 
+	background-color: #000;
+	color: #fff;
+}
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #777;
+}
+.logo-container {
+	background-color: #333;
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	overflow: hidden;
+}
+.container {
+	background-color: #444;
+	width: 90%;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	overflow: hidden;
+}
+.container ul li {
+	background-color: #777;
+	list-style: none;
+	float: left;
+	width: 20%;
+	max-width: 1000px;
+	/*margin: 0 2% 40px 0;*/	
+}
+.container ul li a {
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	color: #ccc;
+	font-size: 15px;
+}
+.container ul li a img{
+	max-width: 100%;
+}
+#logo {
+	margin: 10px auto 5px;
+}
+footer {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: #555;
+}
+#footer_text {
+	font-family: 'Roboto', sans-serif;
+	padding: 5px;
+}
+/* Media Quaries*/
+@media only screen and (max-width : 940px),
+only screen and (max-device-width : 940px){
+	.container ul li {
+		width: 25%;
+	}
+}
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+	.container ul li {
+		width: 33.333333%;
+	}
+}
+@media only screen and (max-width : 640px),
+only screen and (max-device-width : 640px){
+	.container ul li {
+		width: 50%;
+	}
+}
+@media only screen and (max-width : 480px),
+only screen and (max-device-width : 480px){
+	.container ul li {
+		width: 100%;
+	}
+}
