@@ -1,15 +1,67 @@
 * {
 	padding:0;
 	margin:0;
+	/*box-sizing: border-box;*/
 }
+
 body {
 	background-color: #555;
 }
-header {
+
+.header-top {
+	display: flex;
+	align-items: center;
 	height: 70px;
 	background-color: #222;
-	text-align: center;
 }
+
+.logo {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.selector {
+	margin-left: auto;
+}
+
+#shot-choice {
+	font-family: 'Oswald';
+	font-size: 18px;
+	width: 160px;
+	background-color: #444;
+	color: #ccc;
+	padding: 5px;
+	cursor: pointer;
+	border: none;
+}
+#shot-choice:hover {
+	background-color: #555;
+	color: #fff;
+}
+
+.submit-button {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.submit-button button {
+	font-family: 'Oswald';
+	font-size: 18px;
+	background-color: #444;
+	color: #ccc;
+	border: none;
+	border-color: #ccc;
+	border-width: 1px;
+	padding: 5px;
+	cursor: pointer;
+	width:100px;
+}
+
+.submit-button button:hover {
+	background-color: #555;
+	color: #fff;
+}
+
 .container ul li {
 	text-align: center;
 	background-color: #222;
@@ -20,15 +72,18 @@ header {
 	margin: 2% 0 0 2%;
 	padding: 0.5%;
 }
+
 .container ul li a {
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	color: #ccc;
 	font-size: 14px;
 }
+
 .container ul li a img{
 	max-width: 100%;
 }
+
 /* Media Quaries*/
 @media only screen and (max-width : 940px),
 only screen and (max-device-width : 940px){
