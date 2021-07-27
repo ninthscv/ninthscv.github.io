@@ -1,25 +1,5 @@
 <!DOCTYPE html>
 <html>
-<script>
-	function filter() {
-		//get class to view
-		var viewClass = document.getElementById("shot-choice").value;
-		// hide all
-		var all = document.getElementsByTagName('li');
-		for (var i = 0; i < all.length; i++) {
-			if (viewClass != "all") { all[i].style.display = 'none'; }
-			else { all[i].style.display = 'block'; }
-		}
-		// show chosen	
-		if (viewClass != "all") {
-			var matches = document.getElementsByClassName(viewClass);
-			for (var i = 0; i < matches.length; i++) {
-				matches[i].style.display = 'block';
-			}
-		}
-
-	}
-</script>
 
 <head>
 	<meta charset="UTF-8">
@@ -29,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/main.js"></script>  
 </head>
 
 <body>
@@ -50,165 +31,284 @@
 			</div>
 		</div>
 	</header>
-	<div class="container">
-		<ul>
-			<li class="s002">
-				<a href="0039-damned-ones-of-gluttony(1).html">
-					<img src="img\0039-damned-ones-of-gluttony(1)\0039HDG(c19)s067 - Damned Ones of Gluttony(1).jpg"
-						alt="Damned Ones of Gluttony(1)">
-					<h3>Damned Ones - 1</h3>
-				</a>
-			</li>
-			<li class="s002">
-				<a href="0042-husaym-al-din.html">
-					<img src="img\0042-husaym-al-din\0042HHD(c50)s067 - Husaym Al Din.jpg" alt="Husaym Al Din">
-					<h3>Husaym Al Din</h3>
-				</a>
-			</li>
-			<li class="s002">
-				<a href="0192-runtbot-and-grot.html">
-					<img src="img\0192-runtbot-and-grot\0192WRG(с14)s067 - Runtbot and Grot (Forge World Limited Edition 2010).jpg"
-						alt="Runtbot and Grot (Forge World Limited Edition 2010)">
-					<h3>Runtbot and Grot</h3>
-				</a>
-			</li>
-			<li class="s002">
-				<a href="0258-cerastus-knight-castigator.html">
-					<img src="img\0258-cerastus-knight-castigator\0258FCK(c61)s067 - Cerastus Knight Castigator.jpg"
-						alt="Cerastus Knight Castigator">
-					<h3>Cerastus Knight Castigator</h3>
-				</a>
-			</li>
-			<li class="s002">
-				<a href="0355-traitor-librarian-in-cataphractii-terminator-armour.html">
-					<img src="img\0355-traitor-librarian-in-cataphractii-terminator-armour\0355FLT(c21)s067 - Traitor Librarian in Cataphractii Terminator Armour (Forge World Limited Edition 2016).jpg"
-						alt="Traitor Librarian in Cataphractii Terminator Armour (Forge World Limited Edition 2016)">
-					<h3>Traitor Librarian</h3>
-				</a>
-			</li>
-			<li class="s002">
-				<a href="0491-avatar-of-pride.html">
-					<img src="img\0491-avatar-of-pride\0491OAP(c20)s067 - Avatar of Pride (OOP).jpg"
-						alt="Avatar of Pride (OOP)">
-					<h3>Avatar of Pride</h3>
-				</a>
-			</li>
-			<li class="s002">
-				<a href="0848-aries.html">
-					<img src="img\0848-aries\0848KRI(c63)s067 - Aries.jpg" alt="Aries">
-					<h3>Aries</h3>
-				</a>
-			</li>
-			<li class="s002">
-				<a href="0939-warrior-of-sun-male.html">
-					<img src="img\0939-warrior-of-sun-male\0939KMW(c50)s067 - Warrior of Sun Male.jpg"
-						alt="Warrior of Sun Male">
-					<h3>Warrior of Sun Male</h3>
-				</a>
-			</li>
-			<li class="s002">
-				<a href="1043-lady-of-strife.html">
-					<img src="img\1043-lady-of-strife\1043OLS(c44)s067 - Lady of Strife.jpg" alt="Lady of Strife">
-					<h3>Lady of Strife</h3>
-				</a>
-			</li>
-			<li class="s002">
-				<a href="xxxx-carnosuar.html">
-					<img src="img\xxxx-carnosuar\xxxx(c19)s067 - Carnosuar.jpg" alt="Carnosuar">
-					<h3>Carnosuar</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0098-lord-commander-eidolon.html">
-					<img src="img\0098-lord-commander-eidolon\0098FEI(c07)s055 - Lord Commander 0Eidolon Of The Emperor’s Children.jpg"
-						alt="Lord Commander Eidolon Of The Emperor’s Children">
-					<h3>Lord Commander Eidolon</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0216-dwarf-alcomatir.html">
-					<img src="img\0216-dwarf-alcomatir\0216OAL(c02)s055 - Dwarf Alcomatir Barrel Slayer Scibor Miniatures.jpg"
-						alt="Dwarf Alcomatir Barrel Slayer Scibor Miniatures">
-					<h3>Dwarf Alcomatir</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0252-nurgle-plague-toads-1.html">
-					<img src="img\0252-nurgle-plague-toads-1\0252WTN(c43)s055 - Nurgle Plague Toads(1).jpg"
-						alt="Nurgle Plague Toads - 1">
-					<h3>Nurgle Plague Toads - 1</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0252-nurgle-plague-toads-2.html">
-					<img src="img\0252-nurgle-plague-toads-2\0252WTN(c24)s055 - Nurgle Plague Toads(2).jpg"
-						alt="Nurgle Plague Toads - 2">
-					<h3>Nurgle Plague Toads - 2</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0252-nurgle-plague-toads-3.html">
-					<img src="img\0252-nurgle-plague-toads-3\0252WTN(c51)s055 - Nurgle Plague Toads(3).jpg"
-						alt="Nurgle Plague Toads - 3">
-					<h3>Nurgle Plague Toads - 3</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0422-demon-tower.html">
-					<img src="img\0422-demon-tower\0422CMB(c47)s055 - Demon Tower.jpg" alt="Demon Tower">
-					<h3>Demon Tower</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0494-kartikeya.html">
-					<img src="img\0494-kartikeya\0494HKR(с03)s055 - Kartikeya.jpg" alt="Kartikeya">
-					<h3>Kartikeya</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0722-sayl-1.html">
-					<img src="img\0722-sayl-1\0722SSN(c62)s055 - Sayl the Faithless and Nightmaw(1).jpg"
-						alt="Sayl the Faithless and Nightmaw - 1">
-					<h3>Sayl the Faithless - 1</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0722-sayl-2.html">
-					<img src="img\0722-sayl-2\0722SSN(c56)s055 - Sayl the Faithless and Nightmaw(2).jpg"
-						alt="Sayl the Faithless and Nightmaw - 2">
-					<h3>Sayl the Faithless - 2</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0753-dr-doom-on-throne.html">
-					<img src="img\0753-dr-doom-on-throne\0753ODT(c04)s055 - Dr.Doom on Throne 70mm (Limited Edition).jpg"
-						alt="Dr.Doom on Throne 70mm (Limited Edition)">
-					<h3>Dr.Doom on Throne</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0930-sevatar.html">
-					<img src="img\0930-sevatar\0930FSV(c54)s055 - Sevatar – First Captain of the Night Lords.jpg"
-						alt="Sevatar – First Captain of the Night Lords">
-					<h3>Sevatar</h3>
-				</a>
-			</li>
-			<li class="s001">
-				<a href="0973-great-unclean-one.html">
-					<img src="img\0973-great-unclean-one\0973FGU(c63)s055 - Great Unclean One.jpg"
-						alt="Great Unclean One">
-					<h3>Great Unclean One</h3>
-				</a>
-			</li>
-			<li class="s003">
-				<a href="1534-beast-of-nurgle.html">
-					<img src="img\1534-beast-of-nurgle\1534(c35)s070 - Beast of Nurgle.jpg" alt="Beast of Nurgle">
-					<h3>Beast of Nurgle</h3>
-				</a>
-			</li>
-			<ul>
+	<div class="wrapper">
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0098-lord-commander-eidolon.html">
+				<div class="card-img">
+					<img src="img\0098-lord-commander-eidolon\0098FEI(c07)s055 - Lord Commander 0Eidolon Of The Emperor’s Children.jpg" 
+					alt="Lord Commander Eidolon Of The Emperor’s Children">
+				</div>
+				<div class="card-name">
+					<p>Lord Commander Eidolon Of The Emperor’s Children</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0216-dwarf-alcomatir.html">
+				<div class="card-img">
+					<img src="img\0216-dwarf-alcomatir\0216OAL(c02)s055 - Dwarf Alcomatir Barrel Slayer Scibor Miniatures.jpg" 
+					alt="Dwarf Alcomatir Barrel Slayer Scibor Miniatures">
+				</div>
+				<div class="card-name">
+					<p>Dwarf Alcomatir Barrel Slayer Scibor Miniatures</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0252-nurgle-plague-toads-1.html">
+				<div class="card-img">
+					<img src="img\0252-nurgle-plague-toads-1\0252WTN(c43)s055 - Nurgle Plague Toads(1).jpg" 
+					alt="Nurgle Plague Toads - 1">
+				</div>
+				<div class="card-name">
+					<p>Nurgle Plague Toads - 1</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0252-nurgle-plague-toads-2.html">
+				<div class="card-img">
+					<img src="img\0252-nurgle-plague-toads-2\0252WTN(c24)s055 - Nurgle Plague Toads(2).jpg" 
+					alt="Nurgle Plague Toads - 2">
+				</div>
+				<div class="card-name">
+					<p>Nurgle Plague Toads - 2</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0252-nurgle-plague-toads-3.html">
+				<div class="card-img">
+					<img src="img\0252-nurgle-plague-toads-3\0252WTN(c51)s055 - Nurgle Plague Toads(3).jpg" 
+					alt="Nurgle Plague Toads - 3">
+				</div>
+				<div class="card-name">
+					<p>Nurgle Plague Toads - 3</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0422-demon-tower.html">
+				<div class="card-img">
+					<img src="img\0422-demon-tower\0422CMB(c47)s055 - Demon Tower.jpg" 
+					alt="Demon Tower">
+				</div>
+				<div class="card-name">
+					<p>Demon Tower</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0494-kartikeya.html">
+				<div class="card-img">
+					<img src="img\0494-kartikeya\0494HKR(с03)s055 - Kartikeya.jpg" 
+					alt="Kartikeya">
+				</div>
+				<div class="card-name">
+					<p>Kartikeya</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0722-sayl-1.html">
+				<div class="card-img">
+					<img src="img\0722-sayl-1\0722SSN(c62)s055 - Sayl the Faithless and Nightmaw(1).jpg" 
+					alt="Sayl the Faithless and Nightmaw - 1">
+				</div>
+				<div class="card-name">
+					<p>Sayl the Faithless and Nightmaw - 1</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0722-sayl-2.html">
+				<div class="card-img">
+					<img src="img\0722-sayl-2\0722SSN(c56)s055 - Sayl the Faithless and Nightmaw(2).jpg" 
+					alt="Sayl the Faithless and Nightmaw - 2">
+				</div>
+				<div class="card-name">
+					<p>Sayl the Faithless and Nightmaw - 2</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0753-dr-doom-on-throne.html">
+				<div class="card-img">
+					<img src="img\0753-dr-doom-on-throne\0753ODT(c04)s055 - Dr.Doom on Throne 70mm (Limited Edition).jpg" 
+					alt="Dr.Doom on Throne 70mm (Limited Edition)">
+				</div>
+				<div class="card-name">
+					<p>Dr.Doom on Throne 70mm (Limited Edition)</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0930-sevatar.html">
+				<div class="card-img">
+					<img src="img\0930-sevatar\0930FSV(c54)s055 - Sevatar – First Captain of the Night Lords.jpg" 
+					alt="Sevatar – First Captain of the Night Lords">
+				</div>
+				<div class="card-name">
+					<p>Sevatar – First Captain of the Night Lords</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s001">
+			<a class="card" href="0973-great-unclean-one.html">
+				<div class="card-img">
+					<img src="img\0973-great-unclean-one\0973FGU(c63)s055 - Great Unclean One.jpg" 
+					alt="Great Unclean One">
+				</div>
+				<div class="card-name">
+					<p>Great Unclean One</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s002">
+			<a class="card" href="0039-damned-ones-of-gluttony(1).html">
+				<div class="card-img">
+					<img src="img\0039-damned-ones-of-gluttony(1)\0039HDG(c19)s067 - Damned Ones of Gluttony(1).jpg" 
+					alt="Damned Ones of Gluttony - 1">
+				</div>
+				<div class="card-name">
+					<p>Damned Ones of Gluttony - 1</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s002">
+			<a class="card" href="0042-husaym-al-din.html">
+				<div class="card-img">
+					<img src="img\0042-husaym-al-din\0042HHD(c50)s067 - Husaym Al Din.jpg" 
+					alt="Husaym Al Din">
+				</div>
+				<div class="card-name">
+					<p>Husaym Al Din</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s002">
+			<a class="card" href="0192-runtbot-and-grot.html">
+				<div class="card-img">
+					<img src="img\0192-runtbot-and-grot\0192WRG(с14)s067 - Runtbot and Grot (Forge World Limited Edition 2010).jpg" 
+					alt="Runtbot and Grot (Forge World Limited Edition 2010)">
+				</div>
+				<div class="card-name">
+					<p>Runtbot and Grot (Forge World Limited Edition 2010)</p>
+				</div>		
+			</a>
+		</div>
+		
+		<div class="wrapper-cell" name="s002">
+			<a class="card" href="0258-cerastus-knight-castigator.html">
+				<div class="card-img">
+					<img src="img\0258-cerastus-knight-castigator\0258FCK(c61)s067 - Cerastus Knight Castigator.jpg" 
+					alt="Cerastus Knight Castigator">
+				</div>
+				<div class="card-name">
+					<p>Cerastus Knight Castigator</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s002">
+			<a class="card" href="0355-traitor-librarian-in-cataphractii-terminator-armour.html">
+				<div class="card-img">
+					<img src="img\0355-traitor-librarian-in-cataphractii-terminator-armour\0355FLT(c21)s067 - Traitor Librarian in Cataphractii Terminator Armour (Forge World Limited Edition 2016).jpg" 
+					alt="Traitor Librarian in Cataphractii Terminator Armour (Forge World Limited Edition 2016)">
+				</div>
+				<div class="card-name">
+					<p>Traitor Librarian in Cataphractii Terminator Armour (Forge World Limited Edition 2016)</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s002">
+			<a class="card" href="0491-avatar-of-pride.html">
+				<div class="card-img">
+					<img src="img\0491-avatar-of-pride\0491OAP(c20)s067 - Avatar of Pride (OOP).jpg" 
+					alt="Avatar of Pride (OOP)">
+				</div>
+				<div class="card-name">
+					<p>Avatar of Pride (OOP)</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s002">
+			<a class="card" href="0848-aries.html">
+				<div class="card-img">
+					<img src="img\0848-aries\0848KRI(c63)s067 - Aries.jpg" 
+					alt="Aries">
+				</div>
+				<div class="card-name">
+					<p>Aries</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s002">
+			<a class="card" href="0939-warrior-of-sun-male.html">
+				<div class="card-img">
+					<img src="img\0939-warrior-of-sun-male\0939KMW(c50)s067 - Warrior of Sun Male.jpg" 
+					alt="Warrior of Sun Male">
+				</div>
+				<div class="card-name">
+					<p>Warrior of Sun Male</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s002">
+			<a class="card" href="1043-lady-of-strife.html">
+				<div class="card-img">
+					<img src="img\1043-lady-of-strife\1043OLS(c44)s067 - Lady of Strife.jpg" 
+					alt="Lady of Strife">
+				</div>
+				<div class="card-name">
+					<p>Lady of Strife</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s002">
+			<a class="card" href="xxxx-carnosuar.html">
+				<div class="card-img">
+					<img src="img\xxxx-carnosuar\xxxx(c19)s067 - Carnosuar.jpg" 
+					alt="Carnosuar">
+				</div>
+				<div class="card-name">
+					<p>Carnosuar</p>
+				</div>		
+			</a>
+		</div>
+
+		<div class="wrapper-cell" name="s003">
+			<a class="card" href="1534-beast-of-nurgle.html">
+				<div class="card-img">
+					<img src="img\1534-beast-of-nurgle\1534(c35)s070 - Beast of Nurgle.jpg" 
+					alt="Beast of Nurgle">
+				</div>
+				<div class="card-name">
+					<p>Beast of Nurgle</p>
+				</div>		
+			</a>
+		</div>
+
 	</div>
 </body>
-
-
 </html>
